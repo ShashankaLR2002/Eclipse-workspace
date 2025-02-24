@@ -392,7 +392,7 @@ public class AdminServiceImpl implements AdminService {
 
         if (count > 0) {
 
-            System.out.println("EndTimeExist" + endTimings);
+            System.out.println("EndTimeExist--" + endTimings);
             return count;
         } else {
             return 0;
