@@ -83,7 +83,7 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public List<EnquiryEntity> getAllEnquiries() {
 
-        return adminRepository.findAllEnquiries();
+        return   adminRepository.findAllEnquiries();
 
     }
 
