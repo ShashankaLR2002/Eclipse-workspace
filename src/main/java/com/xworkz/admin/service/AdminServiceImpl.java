@@ -83,7 +83,7 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public List<EnquiryEntity> getAllEnquiries() {
 
-        return   adminRepository.findAllEnquiries();
+        return adminRepository.findAllEnquiries();
 
     }
 
@@ -397,7 +397,7 @@ public class AdminServiceImpl implements AdminService {
 
         if (count > 0) {
 
-            System.out.println("EndTimeExist--" + endTimings);
+            System.out.println("EndTimeExist----" + endTimings);
             return count;
         } else {
             return 0;
