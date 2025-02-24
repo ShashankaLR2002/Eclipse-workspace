@@ -59,8 +59,8 @@
     <h1 class="gym-name">Iron Beast Fitness</h1>
 
     <div class="top-buttons">
-        <a href="userlogin.jsp" class="btn btn-light">User Login</a>
-        <a href="adminlogin.jsp" class="btn btn-light">Admin Login</a>
+        <a href="userlogin" class="btn btn-light">User Login</a>
+        <a href="adminlogin" class="btn btn-light">Admin Login</a>
     </div>
 </body>
 </html>
