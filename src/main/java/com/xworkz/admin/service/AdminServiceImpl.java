@@ -1,4 +1,5 @@
 package com.xworkz.admin.service;
+
 import com.xworkz.admin.dto.*;
 import com.xworkz.admin.entity.*;
 import com.xworkz.admin.repository.AdminRepository;
@@ -6,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -79,8 +81,10 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public   List<EnquiryEntity> getAllEnquiries() {
+    public List<EnquiryEntity> getAllEnquiries() {
+
         return adminRepository.findAllEnquiries();
+
     }
 
     @Override
@@ -386,13 +390,14 @@ public class AdminServiceImpl implements AdminService {
             return 0;
         }
     }
+
     @Override
     public long getCountofendTime(String endTimings) {
         long count = adminRepository.getCountofStartTime(endTimings);
 
         if (count > 0) {
 
-            System.out.println("EndTimeExist--" + endTimings);
+            System.out.println("EndTimeExist----" + endTimings);
             return count;
         } else {
             return 0;
