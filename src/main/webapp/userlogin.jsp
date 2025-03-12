@@ -101,8 +101,7 @@
         validateForm();
       };
     }
-
-    fghj
+    testing
     </script>
 </body>
 </html>
