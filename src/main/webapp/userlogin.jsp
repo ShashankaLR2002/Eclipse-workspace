@@ -93,6 +93,7 @@
           ajaxValidationStatus.email = false;
         }
         validateForm();
+        ghj
       };
 
       xhttp.onerror = function() {

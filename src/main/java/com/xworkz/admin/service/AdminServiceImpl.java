@@ -136,7 +136,6 @@ public class AdminServiceImpl implements AdminService {
             message.setContent(emailContent, "text/html");
 
             Transport.send(message);
-
             return true;
         } catch (MessagingException e) {
             log.info("Error sending email: " + e.getMessage());
@@ -228,7 +227,6 @@ public class AdminServiceImpl implements AdminService {
     public List<EnquiryEntity> getFilteredEnquiries(String search) {
         return adminRepository.findFilteredEnquiries(search);
     }
-
 
     @Override
     public RegistrationEntity findregistrationbyid(int Id) {
@@ -386,7 +384,6 @@ public class AdminServiceImpl implements AdminService {
             return count;
 
         } else {
-
             return 0;
         }
     }
